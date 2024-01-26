@@ -1,12 +1,12 @@
 //Written by: Ashley Colbert
 //Written on: January 26, 2024
 
-// The global core Node.js module OS is a very simple, but interesting and useful module. It interacts with your operating system to return a lot of useful information about it. Once the module is imported using require('os') you can use console.log to provide a variety of data. This is represented below:
+// The global core Node.js object OS is a very simple, but interesting and useful object. It interacts with your operating system to return a lot of useful information about it. Once the object is imported using require('os') you can use console.log to provide a variety of data about your operating system. This is represented below:
 
-//(Information gathered from geekforgeeks.com, stackoverflow.com, and nodejs.org)
+//(Information gathered from geekforgeeks.org, stackoverflow.com, and nodejs.org)
 
 
-//Import the OS module:
+//Import the OS object:
 const os = require('os');
 
 //This will return the architecture of the operating system's central processing unit:
