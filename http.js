@@ -1,7 +1,7 @@
 // Written by: Ashley Colbert
 // Written on: January 26, 2024
 
-// The Node.js global object 'http' is a basic, yet important built-in core object. It is used to set up servers. Data can then be transferred between the client and the http server. The server will listen for requests and send back responses. Below is a basic example of how to set up a server using http. 
+// The Node.js global object 'http' is a basic, yet important built-in core object. It is used to set up servers. Data can then be transferred between the client and the http server. The server will listen for requests and send back responses. Below is a basic example of how to set up a server using http:
 
 //(Information gathered from www.geeksforgeeks.org, developer.mozilla.com, and stackoverflow.com)
 

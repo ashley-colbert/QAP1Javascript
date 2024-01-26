@@ -1,13 +1,15 @@
 // Written by: Ashley Colbert
 // Written on: January 25, 2024
 
-//generate-password is a npm package which allows you to use to automatically generate passwords. You can enter your own criteria specifying password length. and using booleans to determine which characters and cases you would like included in the passwords.
+//generate-password is a npm package which allows you to automatically generate passwords. You can enter your own criteria specifying password length. and using booleans to determine which characters and cases you would like to included in the passwords.
 
-const date = require('date-fns');
 const generator = require('generate-password');
 
-//The following function will create a user and print the information to the console. It will take a username as a parameter, then use generate-password to create a random password using specified parameters, and use date-fns module to print the date the user was created in the specified format(MM/dd/yyyy).
+//date-fns is used to manipulate dates in node.js. It's used only briefly to format a date in this case, but can used in a variety of useful ways.
 
+const date = require('date-fns');
+
+//The following function will create a user and print the new user information to the console. It will take a username as a parameter, then use generate-password to create a random password using specified parameters, and use date-fns module to print the date the user was created in the specified format(MM/dd/yyyy).
 
 function createUser(userName) {
   //date-fns will use take the current date and format it as specified.
@@ -19,9 +21,8 @@ function createUser(userName) {
     numbers: true,
     symbols: true,
     uppercase: true,
-    excludeSimilarCharacters: true,
-    strict: true
-  });
+    excludeSimilarCharacters: true
+    });
 
   //console.log uses a template literal to print all the new users information to the console. Note the username will be added when the function is called.
 console.log(`New User Information
@@ -31,9 +32,7 @@ console.log(`New User Information
 return password
 }
 
-
-//This example will generate multiple passwords at once using the same criteria. In this case all passwords will be 10 characters long consisting of only letters and number, and at least one of the letters will be uppercase. They will be printed to the console as an array.
-
+//This example will generate multiple passwords at once using the specified criteria. In this case all passwords will be 10 characters long consisting of only letters and number, and at least one of the letters will be uppercase. They will be printed to the console as an array.
 
 function createMultiPasswords() {
   const multiPasswords = generator.generateMultiple(10, {
