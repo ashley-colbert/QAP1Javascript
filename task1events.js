@@ -24,7 +24,7 @@ myEmitter.on('message', () => {
 
 myEmitter.emit('message');
 
-//The next 5 events will be printed to the console using the object setInterval. This can be used in combination with the events object to set events to occur at a set interval for a specified amount of times.
+//The next 3 events will be printed to the console using the object setInterval. This can be used in combination with the events object to set events to occur at a set interval for a specified amount of times.
 let count = 0;
 const intervalEvent = setInterval(() => {
   count++;
